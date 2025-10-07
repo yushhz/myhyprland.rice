@@ -1,6 +1,6 @@
 * {
     /* `otf-font-awesome` is required to be installed for icons */
-    font-family: "JetBrainsMono Nerd Font", Roboto, Helvetica, Arial, sans-serif;
+    font-family: "JetBrainsMono Nerd Font", sans-serif;
     font-size: 18px;
     font-weight: bold;
 }
@@ -54,13 +54,14 @@ button:hover {
 }
 
 #workspaces {
-    background-color: #F4692E;
+    background-color: #898989;
     border-radius: 15px;
     border: 2px solid #ffffff
 }
 
 
 #workspaces button {
+    transition: 0.2s ease-in-out;
     padding: 0 15px;
     background-color: transparent;
     border-radius: 15px;
@@ -69,12 +70,12 @@ button:hover {
 
 #workspaces button.active {
     background-color: #ffffff;
-    color: #F4692E;
+    color: #898989;
 }
 
 #workspaces button:hover {
     background-color: #ffffff;
-    color: #F4692E;
+    color: #898989;
 }
 
 #workspaces button.focused {
@@ -108,10 +109,11 @@ button:hover {
 #scratchpad,
 #power-profiles-daemon,
 #mpd {
-    padding: 0 10px;
+    padding: 0 15px;
     color: #ffffff;
-    border-radius: 15px;
+    border-radius: 10px;
     border: 2px solid #ffffff
+
 }
 
 #window,
@@ -130,7 +132,7 @@ button:hover {
 }
 
 #clock {
-    background-color: #F4692E;
+    background-color: #898989;
 }
 
 #battery {
@@ -140,7 +142,7 @@ button:hover {
 
 #battery.charging, #battery.plugged {
     color: #ffffff;
-    background-color: #F4692E;
+    background-color: #898989;
 }
 
 @keyframes blink {
@@ -166,7 +168,7 @@ button:hover {
 }
 
 #power-profiles-daemon.performance {
-    background-color: #f53c3c;
+    background-color: #898989;
     color: #ffffff;
 }
 
@@ -189,7 +191,7 @@ label:focus {
 }
 
 #memory {
-    background-color: #F4692E;
+    background-color: #898989;
 }
 
 #disk {
@@ -201,15 +203,16 @@ label:focus {
 }
 
 #network {
-    background-color: #F4692E;
+    padding: 0 20px;
+    background-color: #898989;
 }
 
 #network.disconnected {
-    background-color: #f53c3c;
+    background-color: #898989;
 }
 
 #pulseaudio {
-    background-color: #F4692E;
+    background-color: #898989;
 
 }
 
